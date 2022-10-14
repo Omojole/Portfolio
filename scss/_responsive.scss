@@ -1,0 +1,53 @@
+@include media-md {
+  .nav-toggler {
+    display: none;
+  }
+  .nav {
+    transform: translateY(0);
+    position: initial;
+    &-list {
+      transform: translateY(0);
+      position: initial;
+      display: flex;
+      height: 3vh;
+    }
+    &-item {
+      margin-right: 19px;
+      font-size: map-get($font-size, "very-small");
+      & > a {
+        color: text-color($tertiary-color);
+      }
+    }
+  }
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  margin-top: 5vh;
+  & > .social-icons {
+    flex-direction: row;
+    & > a {
+      margin-right: 1rem;
+    }
+  }
+  & > .copyright {
+    transform: rotate(-90deg);
+    margin-right: 3rem;
+    // writing-mode: horizontal-tb;
+  }
+}
+
+.all-projects{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 5rem;
+}
+form{
+  width: 40vw;
+  }
+}
+// .image{
+//   // align-content: center;
+// }

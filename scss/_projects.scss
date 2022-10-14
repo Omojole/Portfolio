@@ -1,0 +1,19 @@
+.project-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 4vh;
+}
+.project-div {
+  width: 20rem;
+  margin-top: 1rem;
+  &>a>.project-img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+}
+

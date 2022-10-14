@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$primary-color: hsl(300, 44%, 47%);
+$secondary-color: hsl(0, 10%, 8%);
+$tertiary-color: hsl(0, 0%, 100%);
+
+@mixin transition {
+  transition: all 2s;
+}
+$font-size: (
+  "very-small": 1rem,
+  "main":1.5rem,
+  "small": 2rem,
+  "medium":4rem,
+);
+@function text-color($color) {
+  @if (lightness($color) <60%) {
+    @return hsl(0, 0%, 100%) ;
+  } @else {
+    @return hsl(300, 44%, 47%);
+  }
+}
+@mixin media-md {
+  @media screen and(min-width:768px) {
+    @content
+  }
+  
+}
