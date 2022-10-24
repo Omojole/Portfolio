@@ -5,49 +5,64 @@
   .nav {
     transform: translateY(0);
     position: initial;
+    align-items: center;
+    visibility: visible;
     &-list {
-      transform: translateY(0);
-      position: initial;
       display: flex;
-      height: 3vh;
+      list-style-type: none;
     }
     &-item {
       margin-right: 19px;
       font-size: map-get($font-size, "very-small");
-      & > a {
+       a {
         color: text-color($tertiary-color);
+        text-decoration: none;
       }
     }
   }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
-footer {
-  margin-top: 5vh;
-  & > .social-icons {
-    flex-direction: row;
-    & > a {
-      margin-right: 1rem;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer {
+    margin-top: 5vh;
+    & > .social-icons {
+      flex-direction: row;
+      & > a {
+        margin-right: 1rem;
+      }
+    }
+    & > .copyright {
+      transform: rotate(-90deg);
+      margin-right: 3rem;
+      // writing-mode: horizontal-tb;
     }
   }
-  & > .copyright {
-    transform: rotate(-90deg);
-    margin-right: 3rem;
-    // writing-mode: horizontal-tb;
-  }
-}
 
-.all-projects{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 5rem;
-}
-form{
-  width: 40vw;
+  .all-projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5rem;
+  }
+  form {
+    width: 40vw;
+  }
+  #about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .about-div{
+      flex-direction: row;
+      .picture{
+        width: 50vw;
+  
+      }
+      
+    }
+    div{
+      margin-left: 2rem;
+    }
   }
 }
-// .image{
-//   // align-content: center;
-// }

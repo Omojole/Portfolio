@@ -8,11 +8,11 @@ $secondary-color: hsl(0, 10%, 8%);
 $tertiary-color: hsl(0, 0%, 100%);
 
 @mixin transition {
-  transition: all 2s;
+  transition: height 2s;
 }
 $font-size: (
   "very-small": 1rem,
-  "main":1.5rem,
+  "main":1.4rem,
   "small": 2rem,
   "medium":4rem,
 );
